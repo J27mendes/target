@@ -56,3 +56,15 @@ console.log(`Maior valor: ${maior.valor.toFixed(2)} (Dia: ${maior.dia})`);
 console.log(
   `Número de dias com faturamento superior à média mensal: ${diasAcimaDaMedia.length}`
 );
+
+/*questão 1 */
+let INDICE = 13;
+let SOMA = 0;
+let K = 0;
+
+while (K < INDICE) {
+  K = K + 1;
+  SOMA = SOMA + K;
+}
+
+console.log("O valor final de SOMA é:", SOMA);
