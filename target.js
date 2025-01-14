@@ -68,3 +68,30 @@ while (K < INDICE) {
 }
 
 console.log("O valor final de SOMA é:", SOMA);
+
+/*2 questão*/
+function isFibonacci(num) {
+  let a = 0,
+    b = 1;
+
+  if (num === 0 || num === 1) {
+    return `O número ${num} pertence à sequência de Fibonacci.`;
+  }
+
+  while (b <= num) {
+    let temp = b;
+    b = a + b;
+    a = temp;
+
+    if (b === num) {
+      return `O número ${num} pertence à sequência de Fibonacci.`;
+    }
+  }
+
+  return `O número ${num} NÃO pertence à sequência de Fibonacci.`;
+}
+
+// Número a ser verificado
+const numero = 21;
+
+console.log(isFibonacci(numero));
