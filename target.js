@@ -1,3 +1,4 @@
+/*3 questão */
 const data = [
   { dia: 1, valor: 22174.1664 },
   { dia: 2, valor: 24537.6698 },
@@ -123,3 +124,20 @@ console.log("Percentual de representação por estado:");
 for (const estado in percentuais) {
   console.log(`${estado}: ${percentuais[estado]}%`);
 }
+
+/* 5 questão */
+function inverterString(str) {
+  let stringInvertida = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    stringInvertida += str[i];
+  }
+
+  return stringInvertida;
+}
+
+// String a ser invertida
+const entrada = "Exemplo de string";
+
+console.log("String original:", entrada);
+console.log("String invertida:", inverterString(entrada));
