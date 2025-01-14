@@ -50,7 +50,9 @@ const soma = valoresValidos.reduce((acc, curr) => acc + curr.valor, 0);
 const mediaMensal = soma / valoresValidos.length;
 
 // Filtrar dias com valor acima da média
-const diasAcimaDaMedia = data.filter((item) => item.valor > mediaMensal);
+const diasAcimaDaMedia = valoresValidos.filter(
+  (item) => item.valor > mediaMensal
+);
 
 console.log(`Menor valor: ${menor.valor.toFixed(2)} (Dia: ${menor.dia})`);
 console.log(`Maior valor: ${maior.valor.toFixed(2)} (Dia: ${maior.dia})`);
